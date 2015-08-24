@@ -158,7 +158,7 @@ class CtpMdApi(MdApi):
         tick.lastPrice = data['LastPrice']
         tick.volume = data['Volume']
         tick.openInterest = data['OpenInterest']
-        tick.tickTime = '.'.join([data['UpdateTime'], str(data['UpdateMillisec']/100]))
+        tick.tickTime = '.'.join([data['UpdateTime'], str(data['UpdateMillisec']/100))
         
         # CTP只有一档行情
         tick.bidPrice1 = data['BidPrice1']
